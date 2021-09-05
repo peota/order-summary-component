@@ -27,7 +27,6 @@ body {
     font-size: $body-font-size;
     background-color: $light-blue;
     color: $light-gray;
-    padding: 30px;
 
     // top vector
     background-image: url('/images/pattern-background-mobile.svg');
@@ -51,6 +50,15 @@ body {
     color: hsl(228, 45%, 44%);
   }
 
+  /*========== Wrapper Container ==========*/
+.wrapper {
+    height: 100vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
   /*========== Main Container ==========*/
 .container {
     margin: 0 auto;
@@ -58,12 +66,12 @@ body {
     border-radius: 15px;
     position: relative;
     overflow: hidden;
-    max-width: 400px;
+    max-width: 380px;
     -webkit-box-shadow: 0px 13px 20px -5px rgba(57, 42, 225, 0.274); 
     box-shadow: 0px 13px 20px -5px rgba(57, 42, 225, 0.274); 
 
     .inner-content {
-        padding: 1.8rem;
+        padding: 2rem;
     }
 
     img {
@@ -73,10 +81,9 @@ body {
 
 /*========== Summary and Description ==========*/
 .details   {
-
     .text {
         text-align: center;
-
+        line-height: 1.7rem;
         .title {
             font-size: 1.7rem;
             margin-bottom: 1.2rem;
@@ -87,9 +94,9 @@ body {
 
 /*========== Plan details and pricing ==========*/
 .plan {
-    margin-top: 1.3rem;
-    margin-bottom: 1.3rem;
-    padding:1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.6rem;
+    padding:1.3rem;
     border-radius: 10px;
     background-color: #F8F9FE;
     display: flex;
@@ -103,6 +110,12 @@ body {
         .title {
             font-weight: bold;
             color: $dark-blue;
+            margin-bottom: 0.175rem;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
         }
     }
 
