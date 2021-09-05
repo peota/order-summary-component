@@ -1,0 +1,133 @@
+/*========== Imports ==========*/
+/*========== Colors ==========*/
+/*========== Font and typography ==========*/
+/*========== Main configuration ==========*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+button, input {
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*========== Body ==========*/
+body {
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  background-color: #E0E8FF;
+  color: #696F85;
+  padding: 30px;
+  background-image: url("/images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url("/images/pattern-background-desktop.svg");
+    background-position: top center;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+/*========== Main Container ==========*/
+.container {
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  max-width: 400px;
+  -webkit-box-shadow: 0px 13px 20px -5px rgba(57, 42, 225, 0.274);
+  box-shadow: 0px 13px 20px -5px rgba(57, 42, 225, 0.274);
+}
+.container .inner-content {
+  padding: 1.8rem;
+}
+.container img {
+  max-width: 100%;
+}
+
+/*========== Summary and Description ==========*/
+.details .text {
+  text-align: center;
+}
+.details .text .title {
+  font-size: 1.7rem;
+  margin-bottom: 1.2rem;
+  color: #1E2B42;
+}
+
+/*========== Plan details and pricing ==========*/
+.plan {
+  margin-top: 1.3rem;
+  margin-bottom: 1.3rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #F8F9FE;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.plan .plan_details {
+  display: flex;
+  column-gap: 20px;
+}
+.plan .plan_details .title {
+  font-weight: bold;
+  color: #1E2B42;
+}
+.plan a {
+  font-size: 0.875rem;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #382AE1;
+}
+
+/*========== Payment Button ==========*/
+.btn {
+  background-color: #382AE1;
+  outline: none;
+  border: none;
+  padding: 15px 24px;
+  width: 100%;
+  border-radius: 7px;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 13px 20px -5px rgba(57, 42, 225, 0.418);
+  box-shadow: 0px 13px 20px -5px rgba(57, 42, 225, 0.418);
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: white;
+  color: #382AE1;
+}
+
+/*========== Cancel link ==========*/
+.cancelation {
+  margin-top: 1.4rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */
